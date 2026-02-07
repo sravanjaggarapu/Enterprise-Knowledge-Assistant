@@ -10,7 +10,7 @@ from langchain_core.output_parsers import StrOutputParser
 
 load_dotenv()
 
-DB_PATH = "db"
+DB_PATH = "/app/db"
 
 app = FastAPI()
 

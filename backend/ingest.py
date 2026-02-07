@@ -8,8 +8,9 @@ from langchain_community.vectorstores import Chroma
 
 load_dotenv()
 
-DATA_PATH = "docs"
-DB_PATH = "db"
+DATA_PATH = "/app/docs"
+DB_PATH = "/app/db"
+
 
 def ingest():
     documents = []

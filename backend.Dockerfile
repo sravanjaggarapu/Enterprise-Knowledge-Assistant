@@ -13,4 +13,4 @@ COPY db/ db/
 
 WORKDIR /app/backend
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD sh -c "python ingest.py && uvicorn main:app --host 0.0.0.0 --port 8000"
